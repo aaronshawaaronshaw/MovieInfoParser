@@ -1,0 +1,48 @@
+#creates a table called "actors" storing an actor id, name, and their DOB
+create table actors(
+    id integer PRIMARY KEY, 
+    actor_name VARCHAR (255) NOT NULL,
+    birthday VARCHAR (255) NOT NULL
+);
+
+#creates a table called "movies" storing a movie id, name, and its release date
+create table movies(
+    id integer PRIMARY KEY, 
+    movie_name VARCHAR(255) NOT NULL, 
+    release_date VARCHAR (255) NOT NULL
+);
+
+#creates a table called "actor_in_movie" tracking which actors were in which movie
+# actor_id and movie_id map to the ids from "actors" and "movies"
+create table actor_in_movie(
+    actor_id integer NOT NULL, 
+    movie_id integer NOT NULL, 
+    PRIMARY KEY (actor_id, movie_id), 
+    CONSTRAINT actor_in_movie_user_id_fkey FOREIGN KEY (actor_id)
+        REFERENCES actors (id) MATCH SIMPLE
+        ON UPDATE NO ACTION ON DELETE NO ACTION,
+    CONSTRAINT actor_in_movie_movie_id_fkey FOREIGN KEY (movie_id)
+        REFERENCES movies (id) MATCH SIMPLE
+        ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+
+# Given an actor name (name, not id), find the actor’s movies and return their names and release dates.
+SELECT
+    movie_name, release_date
+FROM
+    movies
+INNER JOIN actor_in_movie ON actor_in_movie.movie_id = movies.id
+INNER JOIN actors ON actor_in_movie.actor_id = actors.id
+WHERE
+    actors.actor_name = ACTOR_NAME;
+
+# Given a movie name (name, not id), find the movie’s actors and return their names and birthdays.
+SELECT
+    actor_name, birthday
+FROM
+    actors
+INNER JOIN actor_in_movie ON actor_in_movie.actor_id = actors.id
+INNER JOIN movies ON movies.id = actor_in_movie.movie_id
+WHERE
+    movies.movie_name = MOVIE_NAME;

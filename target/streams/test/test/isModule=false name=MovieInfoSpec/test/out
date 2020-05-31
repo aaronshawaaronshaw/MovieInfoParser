@@ -1,0 +1,10 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mMovieInfoSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mMovieInfo[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get all the movies an actor has been in[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get no movies if an actor has been in no movies[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get all the actors in a movie[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get no actors if a movie does not exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get all the costars of an actor[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle invalid json by returning nothing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle empty json by returning nothing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle cases where the file path to json was incorrect[0m[0m

@@ -1,0 +1,120 @@
+{
+  "actors": [
+    {
+      "id": 1,
+      "name": "Robert Deniro",
+      "birthday": "August 17, 1943"
+    },
+    {
+      "id": 2,
+      "name": "Al Pacino",
+      "birthday": "April 25, 1940"
+    },
+    {
+      "id": 3,
+      "name": "Dustin Hoffman",
+      "birthday": "August 8, 1937"
+    },
+    {
+      "id": 4,
+      "name": "Ben Stiller",
+      "birthday": "November 30, 1965"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "Godfather Part 2",
+      "releaseDate": "December 20, 1974"
+    },
+    {
+      "id": 2,
+      "name": "Heat",
+      "releaseDate": "December 15, 1995"
+    },
+    {
+      "id": 3,
+      "name": "Righteous Kill",
+      "releaseDate": "September 12, 2008"
+    },
+    {
+      "id": 4,
+      "name": "Scarface",
+      "releaseDate": "December 1, 1983"
+    },
+    {
+      "id": 5,
+      "name": "Taxi Driver",
+      "releaseDate": "February 8, 1976"
+    },
+    {
+      "id": 6,
+      "name": "Meet the Fockers",
+      "releaseDate": "December 22, 2004"
+    },
+    {
+      "id": 7,
+      "name": "Tootsie",
+      "releaseDate": "December 1, 1982"
+    },
+    {
+      "id": 8,
+      "name": "Something About Mary",
+      "releaseDate": "July 15, 1998"
+    }
+  ],
+  "actorMovies": [
+    {
+      "actorId": 1,
+      "movieId": 1
+    },
+    {
+      "actorId": 2,
+      "movieId": 1
+    },
+    {
+      "actorId": 1,
+      "movieId": 2
+    },
+    {
+      "actorId": 2,
+      "movieId": 2
+    },
+    {
+      "actorId": 1,
+      "movieId": 3
+    },
+    {
+      "actorId": 2,
+      "movieId": 3
+    },
+    {
+      "actorId": 2,
+      "movieId": 4
+    },
+    {
+      "actorId": 1,
+      "movieId": 5
+    },
+    {
+      "actorId": 1,
+      "movieId": 6
+    },
+    {
+      "actorId": 3,
+      "movieId": 6
+    },
+    {
+      "actorId": 4,
+      "movieId": 6
+    },
+    {
+      "actorId": 3,
+      "movieId": 7
+    },
+    {
+      "actorId": 4,
+      "movieId": 8
+    }
+  ]
+}

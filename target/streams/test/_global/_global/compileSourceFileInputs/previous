@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.13.2":{"hashes":[["/Users/AaronsMac/Desktop/Coding Folder/CognitopsChallenge/src/test/scala/MovieInfoSpec.scala","eee9f2b58b727e30e95c005be935def5f425cacf"]],"lastModifiedTimes":[]}}]
