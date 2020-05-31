@@ -68,6 +68,11 @@ robust json parsing tools available in Scala and provided methods to automatical
 feature greatly abstracts away complexity of the solution, allowing the majority of the code to focus on manipulation of 
 the case classes rather nitty gritty details of indexing into Json.
 
+The automatic json converter in Circe takes in Json as a string and generates case classes from it. Because of this feature, 
+I chose to open the Json file as a string in its entirety using _scala.io.Source_. This approach is limited because the
+entire file must be read into memory. For the purpose of this coding challenge, I thought that acceptable, however, in 
+production this may need to be modified to account for large Json files that do not fit into memory.
+
 I attempted to modularize my code to reduce redundancy and to follow coding best practices. Each function is responsible
 for one task, allowing the reuse of functions. A secondary benefit to this is increased ease of debugging by allowing 
 errors in testing to be more quickly trace back to a point of failure.

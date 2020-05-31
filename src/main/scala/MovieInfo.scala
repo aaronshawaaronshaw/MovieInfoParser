@@ -13,7 +13,9 @@ object MovieInfo {
 
   private def parseRawJson(pathToJson: String): MovieData = {
     try {
-      val fileAsString = scala.io.Source.fromFile(pathToJson).mkString
+      val file = scala.io.Source.fromFile(pathToJson)
+      val fileAsString = file.mkString
+      file.close()
       decode[MovieData](fileAsString).getOrElse(MovieData())
     } catch {
       case e: Exception =>
